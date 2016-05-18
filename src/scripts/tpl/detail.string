@@ -1,0 +1,7 @@
+<div spa-widget="scroll">
+  <div class="">
+    <img ms-src="detail.img" />
+    <h1 ms-text="detail.title"></h1>
+    <h3 ms-html="detail.detail"></h3>
+  </div>
+</div>

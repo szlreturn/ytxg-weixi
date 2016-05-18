@@ -1,0 +1,79 @@
+<header>
+  <ul>
+    <li class="yo-ico">&#xe619;</li>
+    <li>
+      <div id="home-nav">
+        <span class="active" id="hot" action-type="hot">热点</span>
+        <span action-type="follow">关注</span>
+      </div>
+    </li>
+    <li class="yo-ico">&#xe618;</li>
+  </ul>
+</header>
+<div class="swiper-container" id="home-swiper">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide">
+      <nav>
+        <ul id="home-hot-nav">
+          <li class="active" action-type="tap.hot.slide">足球现场</li>
+          <li action-type="tap.hot.slide">足球生活</li>
+          <li action-type="tap.hot.slide">足球美女</li>
+        </ul>
+      </nav>
+      <div class="swiper-container" id="home-hot-swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide" >
+            <section spa-widget="scroll" data-scroll-id="homeHotScroll" ms-visible="!isShowLoading">
+              <div>
+                <div class="head">
+                  <img src="/webapp1502/images/arrow.png"/>
+                  <span>下拉刷新...</span>
+                </div>
+                <ul ms-repeat="homeList">
+                  <li action-type="goto.detail" ms-attr-data-id="el[0].id">
+                    <i><img ms-src="el[0].img" /></i>
+                    <b ms-text="el[0].title"></b>
+                  </li>
+                  <li></li>
+                  <li ms-class-hidden="!el[1]" action-type="goto.detail" ms-attr-data-id="el[1].id">
+                    <i><img ms-src="el[1].img" /></i>
+                    <b ms-text="el[1].title"></b>
+                  </li>
+                </ul>
+                <div class="foot">
+                  <img src="/webapp1502/images/arrow.png"/>
+                  <span>上拉加载更多...</span>
+                </div>
+              </div>
+            </section>
+            <div class="yo-loading" ms-visible='isShowLoading'>
+                <div class="inner"><i class="yo-ico"></i><span>加载中...</span></div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            足球生活
+          </div>
+          <div class="swiper-slide">
+            足球美女
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="swiper-slide m-home-follow" spa-widget="scroll" data-scroll-id="myFollowScroll">
+      <div>
+        <img src="/webapp1502/images/phone.png" alt="" />
+        <div class="fixed-menu" id="fixed-menu">
+          <input type="text" ms-duplex="surname">
+        </div>
+        <img src="/webapp1502/images/phone.png" alt="" />
+        <img src="/webapp1502/images/phone.png" alt="" />
+        <img src="/webapp1502/images/phone.png" alt="" />
+        <img src="/webapp1502/images/phone.png" alt="" />
+        <img src="/webapp1502/images/phone.png" alt="" />
+        <img src="/webapp1502/images/phone.png" alt="" />
+        <img src="/webapp1502/images/phone.png" alt="" />
+        <img src="/webapp1502/images/phone.png" alt="" />
+      </div>
+    </div>
+  </div>
+</div>

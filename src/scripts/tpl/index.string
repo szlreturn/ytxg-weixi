@@ -1,0 +1,26 @@
+<div class="m-index">
+  <div class="m-index-container" id="m-index-container"></div>
+  <footer>
+    <ul>
+      <li class="active" action-type="tap.switch" data-tag="home">
+        <i class="yo-ico">&#xe603;</i>
+        <b>首页</b>
+      </li>
+      <li action-type="tap.switch" data-tag="search">
+        <i class="yo-ico">&#xe660;</i>
+        <b>发现</b>
+      </li>
+      <li>
+        <i class="yo-ico">&#xe650;</i>
+      </li>
+      <li action-type="tap.my">
+        <i class="yo-ico">&#xe608;</i>
+        <b>我的</b>
+      </li>
+      <li action-type="tap.exit">
+        <i class="yo-ico">&#xe60b;</i>
+        <b>退出</b>
+      </li>
+    </ul>
+  </footer>
+</div>
